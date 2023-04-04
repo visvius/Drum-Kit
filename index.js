@@ -53,12 +53,12 @@ function makeSound(letter)
 
 function animate(letter)
 {
-    var active = document.querySelector("."+letter);
+    var activeButton = document.querySelector("."+letter);
     
-    active.classList.add("pressed");
+    activeButton.classList.add("pressed");
     setTimeout(function()
     {
-        active.classList.remove("pressed");
+        activeButton.classList.remove("pressed");
     })
 }
 
